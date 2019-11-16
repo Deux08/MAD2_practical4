@@ -11,11 +11,19 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var contactList:[Contact] = []
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        contactList = [
+            Contact(firstname: "apple", lastname: "bottom", mobileno: "1234567"),
+            Contact(firstname: "apple", lastname: "bottom", mobileno: "1234567"),
+            Contact(firstname: "apple", lastname: "bottom", mobileno: "1234567")
+        ]
+        
         return true
+        
     }
 
     // MARK: UISceneSession Lifecycle
